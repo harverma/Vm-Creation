@@ -55,7 +55,7 @@ resource "vsphere_virtual_machine" "vm" {
     template_uuid = "${data.vsphere_virtual_machine.template.id}"
     
   customize {
-      timeout = "45"
+      timeout = "3600"
   }      
 
     customize {
