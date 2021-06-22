@@ -54,11 +54,10 @@ resource "vsphere_virtual_machine" "vm" {
   clone {
     template_uuid = "${data.vsphere_virtual_machine.template.id}"
     
-  customize {
-      timeout = "3600"
-  }      
+      
 
     customize {
+      timeout = 50
       linux_options {
         host_name = "Ansible-Hv"
         domain    = "ansible.simpsons.qa"
