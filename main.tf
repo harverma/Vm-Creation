@@ -1,7 +1,7 @@
 provider "vsphere" {
   user           = "hverma@REDHOUSE.HQ"
   password       = "Idera*237723"
-  vsphere_server = "vc-01.redhouse.hq"
+  vsphere_server = "10.31.50.52"
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
