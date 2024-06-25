@@ -60,7 +60,7 @@ resource "vsphere_virtual_machine" "vm" {
       timeout = 50
       linux_options {
         host_name = "Ansible-Hv"
-        domain    = "ansible.simpsons.qa"
+        domain    = ""
       }
       network_interface {}
     }
